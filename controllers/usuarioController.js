@@ -43,7 +43,7 @@ module.exports = {
 
             // firmar el jwt
             jwt.sign(payload, process.env.SECRETA, {
-                expiresIn: 3600
+                expiresIn: 36000
             }, (err, token) => {
                 if(err) throw err;
 
